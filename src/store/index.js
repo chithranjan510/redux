@@ -9,12 +9,12 @@ const counterReducer = (state = { count: 0 }, action) => {
     return { count: state.count - 1 };
   }
 
-  if (action.type === 'incrementBy2') {
-    return { count: state.count + 2 };
+  if (action.type === 'incrementBy5') {
+    return { count: state.count + 5 };
   }
 
-  if (action.type === 'decrementBy2') {
-    return { count: state.count - 2 };
+  if (action.type === 'decrementBy5') {
+    return { count: state.count - 5 };
   }
 
   return state;
